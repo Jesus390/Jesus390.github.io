@@ -1,0 +1,43 @@
+baseURL = "https://Jesus390.github.io/"
+languageCode = "es"
+title = "XAGI - Tu blog de IA"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  author = "Jesús Espinola"
+  description = "Investigaciones y resúmenes de papers sobre inteligencia artificial"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+[params.homeInfoParams]
+  Title = "Bienvenido a mi blog de IA"
+  Content = "Investigaciones, resúmenes de papers y análisis sobre inteligencia artificial"
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/Jesus390"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Artículos"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Temas"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "search"
+    name = "Buscar"
+    url = "/search/"
+    weight = 30
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
